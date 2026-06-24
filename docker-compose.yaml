@@ -1,4 +1,3 @@
-version: "3.3"
 services:
     homepage:
       image: ghcr.io/gethomepage/homepage:latest
@@ -6,9 +5,10 @@ services:
       ports:
         - 3000:3000
       env_file: .env
-      volume:
+      volumes:
         - .config/:/app/config # ensure that the local config dir exists
       #  - /var/run/docker.sock:/var/run/docker.sock # for docker integration (optional)
       environment: 
-        PUID: $PUID #read form .env (process user ID)
-        PGID: $PGID #read from .env (process Group ID)
+        - HOMEPAGE_ALLOWED_HOSTS
+        - PUID: $PUID #read form .env (process user ID)
+        - PGID: $PGID #read from .env (process Group ID)
