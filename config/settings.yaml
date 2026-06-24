@@ -1,9 +1,13 @@
 title: homepage
 description: homepage for homelab
 
-background: 
+background:
   image: https://wallpaperaccess.com/full/1567665.png
-  blur: sm
-  saturate: 50
-  brightness: 50
-  opacity: 50 
+  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  opacity: 50 # 0-100
+
+theme: dark
+color: slate
+

@@ -6,7 +6,7 @@ services:
         - 3000:3000
       env_file: .env
       volumes:
-        - .config/:/app/config # ensure that the local config dir exists
+        - ./config/:/app/config # ensure that the local config dir exists
         - /var/run/docker.sock:/var/run/docker.sock # for docker integration (optional)
       environment: 
         HOMEPAGE_ALLOWED_HOSTS: 192.168.0.201:3000
