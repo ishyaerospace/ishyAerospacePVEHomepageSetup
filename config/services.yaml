@@ -2,21 +2,26 @@
 
 - Group hypervisor:
   - proxmox:
-    icon: proxmox.png 
-    href: https://192.168.0.200:8006
-    description: proxmox VE main
+      icon: proxmox.png 
+      href: https://192.168.0.200:8006
+      description: proxmox VE main
 
-- Group websites:
-  - NPM:
-  #  icon: npm
+#- Group websites:
+#  - NPM:
+#      icon: npm
+#    widget:
+#      type: npm
+#      url: http://npm.host.or.ip
+#      username: admin_username
+#      password: admin_password
 
-  - AquaWebDashboard:
-  # icon: 
-    href: https://AquaWebDashboard/cozmicxzelectronics.uk
-    description: shows data on fishtank
-- Group Games:
-  - minecraft server 1:
-  #  icon: 
-    description: minecraft server 1 (friend server)
+#  - AquaWebDashboard:
+#      icon: 
+#    href: https://AquaWebDashboard/cozmicxzelectronics.uk
+#    description: shows data on fishtank
+#- Group Games:
+#  - minecraft server 1:
+#      icon: 
+#    description: minecraft server 1 (friend server)
 
-- Group Networking:
+#- Group Networking:
