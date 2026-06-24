@@ -9,6 +9,6 @@ services:
         - .config/:/app/config # ensure that the local config dir exists
         - /var/run/docker.sock:/var/run/docker.sock # for docker integration (optional)
       environment: 
-        HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev
+        HOMEPAGE_ALLOWED_HOSTS: 192.168.0.201:3000
         PUID: $PUID #read form .env (process user ID)
         PGID: $PGID #read from .env (process Group ID)
