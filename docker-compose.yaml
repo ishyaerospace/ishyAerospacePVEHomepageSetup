@@ -7,8 +7,8 @@ services:
       env_file: .env
       volumes:
         - .config/:/app/config # ensure that the local config dir exists
-      #  - /var/run/docker.sock:/var/run/docker.sock # for docker integration (optional)
+        - /var/run/docker.sock:/var/run/docker.sock # for docker integration (optional)
       environment: 
-        - HOMEPAGE_ALLOWED_HOSTS
-        - PUID: $PUID #read form .env (process user ID)
-        - PGID: $PGID #read from .env (process Group ID)
+        HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev
+        PUID: $PUID #read form .env (process user ID)
+        PGID: $PGID #read from .env (process Group ID)
